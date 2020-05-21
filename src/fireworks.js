@@ -26,8 +26,6 @@ function startFireworks() {
     buffer.height = height;
     ctx_buffer = buffer.getContext("2d");
 
-    loadAudio();
-
     riff.play();
 
     Array(50).fill().forEach(shootFirework);
@@ -130,5 +128,7 @@ function dot(x, y) {
     const yCoord = y * height;
     ctx_buffer.fillRect(xCoord-1, yCoord-1, 3, 3)
 }
+
+loadAudio();
 
 export default startFireworks;
