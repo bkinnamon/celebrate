@@ -36,9 +36,10 @@ function startFireworks() {
 
 function loadAudio() {
     riff = document.createElement('audio');
-    riff.src = "riff.mp3";
+    riff.src = "static/riff.mp3";
     riff.type = "audio/mpeg";
     document.body.append(riff);
+    riff.load();
 }
 
 function drawFirework({x, y}) {
